@@ -12,7 +12,7 @@ Follow these steps to get started:
 
 1. 🧹 **Prepare your machine**: Ensure that your machine is freshly reinstalled if you've made any changes to it beforehand. A clean setup will help avoid conflicts during installation.
 
-2. 🌐 **DNS Configuration**: Point a **DNS A-Record** to your machine's IP address. For example, you can point `panel.example.com` to `0.0.0.0`.
+2. 🌐 **DNS Configuration**: Point a **DNS A-Record** to your machine's IP address. For example, you can point `panel.example.com` to `Example --> 86.144.10.13`.
 
 3. 📥 **Download and Run the Installer**: To download and run the installer, simply enter the following command into your terminal and follow the prompts:
 ```
