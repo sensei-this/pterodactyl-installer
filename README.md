@@ -40,8 +40,8 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 ```ini
 bind-address = 127.0.0.1
 ```
-If you have an IP replace `127.0.0.1` with your IP address (e.g., `0.0.0.0`).  
-If you have a domain replace `127.0.0.1` with your IP address (e.g., `83.168.107.132`). 
+If you have an IP replace `127.0.0.1` with your IP address (e.g., `Example --> 0.0.0.0`).  
+If you have a domain replace `127.0.0.1` with your IP address (e.g., `Example --> 86.144.10.13`). 
 
 🔹 Save the changes (Ctrl + X → Y → Enter).  
 
