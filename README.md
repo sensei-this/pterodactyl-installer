@@ -38,15 +38,18 @@ sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 
 🔹 Find the following line:
 ```ini
-bind-address = 0.0.0.0
+bind-address = 127.0.0.1
 ```
-Replace `0.0.0.0` with your IP address (e.g., `192.168.1.100`).  
+If you have an IP replace `127.0.0.1` with your IP address (e.g., `0.0.0.0`).  
+If you have a domain replace `127.0.0.1` with your IP address (e.g., `83.168.107.132`). 
 
 🔹 Save the changes (Ctrl + X → Y → Enter).  
 
 🔹 Restart MySQL/MariaDB:  
 ```bash
 sudo systemctl restart mysql
+```
+```
 sudo systemctl restart mariadb
 ```
 
