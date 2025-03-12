@@ -27,6 +27,15 @@ bash <(curl -Ss https://raw.githubusercontent.com/sensei-this/pterodactyl-instal
 🔹 Install **MySQL** or **MariaDB** on the panel server.  
 🔹 Check if port **3306** (or another if using a custom one) is open.  
 
+Installint phpmyadmin
+```
+export PHPMYADMIN_VERSION=$(curl --silent https://www.phpmyadmin.net/downloads/ | grep "btn btn-success download_popup" | sed -n 's/.*href="\([^"]*\).*/\1/p' | tr '/' '\n' | grep -E '^.*[0-9]+\.[0-9]+\.[0-9]+$')
+```
+for
+```
+cd /var/www/pterodactyl/public && wget https://files.phpmyadmin.net/phpMyAdmin/$PHPMYADMIN_VERSION/phpMyAdmin-$PHPMYADMIN_VERSION-all-languages.zip && unzip phpMyAdmin-$PHPMYADMIN_VERSION-all-languages.zip && rm phpMyAdmin-$PHPMYADMIN_VERSION-all-languages.zip && mv phpMyAdmin-$PHPMYADMIN_VERSION-all-languages pma
+```
+
 ---
 
 ## 2️⃣ Configuring Database Access
